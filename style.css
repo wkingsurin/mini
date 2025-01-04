@@ -1,0 +1,60 @@
+@import './css/reset.css';
+@import './css/font.css';
+
+body {
+    font-size: 20px;
+}
+
+.app {
+    min-height: 100vh;
+
+    font-family: 'Monda';
+
+    color: white;
+    background: #151515;
+
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 425px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.calc-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+
+    padding: 0 55px;
+}
+
+.calc {
+    display: flex;
+    justify-content: space-between;
+}
+input, .answer {
+    max-width: 90px;
+    height: 45px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background: #252525;
+    text-align: right;
+}
+.operator {
+    line-height: 45px;
+    font-size: 36px;
+    color: rgba(255, 255, 255, .35);
+}
+.answer {
+    max-width: 100%;
+}
