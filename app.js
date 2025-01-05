@@ -9,6 +9,7 @@ inputs.forEach(input => {
     input.addEventListener('input', (e) => {
         if (inputA && inputB) {
             output.textContent = +inputA.value + +inputB.value
+            timePanel.textContent = setTime()
         }
     })
 })
@@ -19,7 +20,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 function setTime() {
     let time = getTime()
-    console.log(time)
 
     if (time) {
         time = new Date(Date.now() - time)
