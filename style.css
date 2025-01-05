@@ -58,3 +58,6 @@ input, .answer {
 .answer {
     max-width: 100%;
 }
+.time {
+    text-align: center;
+}
